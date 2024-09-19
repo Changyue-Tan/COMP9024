@@ -52,16 +52,16 @@ int main(void) {
     PrintArray(arr, len);
     BubbleSort2(arr, len, fptr);
     // in ascending order
-    printf("After sorting:\n");
+    printf("\nAfter sorting in ascending order:\n");
     PrintArray(arr, len);
 
     // a function pointer variable which points to the function IsLess()
     fptr = &IsLess;    
-    printf("\nBefore sorting:\n");
-    PrintArray(arr, len);
+    // printf("\nBefore sorting:\n");
+    // PrintArray(arr, len);
     BubbleSort2(arr, len, fptr);
     // in descending order
-    printf("After sorting:\n");
+    printf("After sorting in descending order:\n");
     PrintArray(arr, len);
     return 0;
 }

@@ -34,7 +34,7 @@ n - 2   = 8
 
 void BubbleSort2(int *ptr, int n, ComparatorFuncPtr compare) {
     for (int iMax = n - 2; iMax >= 0; iMax--) {
-        for (int i = 0; i < iMax; i++) {
+        for (int i = 0; i <= iMax; i++) {
             if (compare(ptr[i], ptr[i + 1])) {
                 Swap(ptr + i, ptr + i + 1);
             }

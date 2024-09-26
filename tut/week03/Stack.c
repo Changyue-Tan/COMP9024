@@ -147,10 +147,11 @@ STACK_ITEM_T StackPeek(struct Stack *pStack) {
 }
 
 void printStack(struct Stack *pStack) {
+    printf("The stack has a capacity of %ld. The Stack is: ", pStack->size);
     int i = 0;
     int n = pStack->top;
     for (; i <= n; i++) {
         printf("%ld ", pStack->pItems[i]);
     }
-    printf("\n");
+    putchar('\n');
 }

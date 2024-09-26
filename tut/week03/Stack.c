@@ -1,9 +1,12 @@
+
+// an implementation of Stack ADT using array
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
 
-#define INITIAL_STACK_SIZE 64
+#define INITIAL_STACK_SIZE 2
 #define TOP_POS_FOR_EMPTY_STACK -1
 
 typedef long STACK_ITEM_T;
@@ -21,8 +24,20 @@ STACK_ITEM_T StackPop(struct Stack *pStack);
 STACK_ITEM_T StackPeek(struct Stack *pStack);
 int StackIsEmpty(struct Stack *pStack);
 
+void printStack(struct Stack *pStack);
+
 int main(void) {
-    //
+    struct Stack *stack = CreateStack();
+    StackPush(stack, 1);
+    printStack(stack);
+    StackPush(stack, 2);
+    printStack(stack);
+    StackPush(stack, 3);
+    printStack(stack);
+    StackPush(stack, 4);
+    printStack(stack);
+    StackPush(stack, 5);
+    printStack(stack);
     return 0;
 }
 
@@ -95,11 +110,17 @@ void StackPush(struct Stack *pStack, STACK_ITEM_T item) {
         // Double the capacity of the stack        
         
         // Q1. ___________________
-        // assert(newItems);
+        STACK_ITEM_T *newItems = malloc(2 * pStack->size * sizeof(STACK_ITEM_T));
+        
+        assert(newItems);
         // Q2. ___________________
+        memcpy(newItems, pStack->pItems, pStack->size * sizeof(STACK_ITEM_T));
         // Q3. ___________________
+        free(pStack->pItems);
         // Q4. ___________________
+        pStack->size = pStack->size * 2;
         // Q5. ___________________
+        pStack->pItems = newItems;
     }
 
     // Now the stack is not full. Let us do the push operation.
@@ -125,3 +146,11 @@ STACK_ITEM_T StackPeek(struct Stack *pStack) {
     return item;
 }
 
+void printStack(struct Stack *pStack) {
+    int i = 0;
+    int n = pStack->top;
+    for (; i <= n; i++) {
+        printf("%ld ", pStack->pItems[i]);
+    }
+    printf("\n");
+}

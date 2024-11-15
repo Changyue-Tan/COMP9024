@@ -63,6 +63,8 @@ static void initialHeap() {
      
   2. The memory allocated is not initialized. 
 
+  3. Time Complexity with n free memory blocks: O(n)
+
  */
 static void *OurMalloc(heap_size_t size) {
     if (!init) {
@@ -172,6 +174,8 @@ static void mergeIfAdjacent(struct HeapMemBlock *one,
   which must have been returned by a previous call to OurMalloc().
 
   If addrs is NULL, no operation is performed.
+
+  Time Complexity with n free memory blocks: O(n)
 
  */
 static void OurFree(void *addr) {

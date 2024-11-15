@@ -1,0 +1,20 @@
+1,3c1,3
+< ./scc < tests/EnvVars.scc > tests/EnvVars.scc.s
+< gcc -g -no-pie tests/EnvVars.scc.s libs/SccHeap.c libs/SccLib.c -I /home/tanchangyue/COMP9024/COMP9024_my/LargeAssignment/libs -o tests/EnvVars.scc.exe
+< tests/EnvVars.scc.exe
+---
+> ./scc < tests/DoWhile.scc > tests/DoWhile.scc.s
+> gcc -g -no-pie tests/DoWhile.scc.s libs/SccHeap.c libs/SccLib.c -I /home/tanchangyue/COMP9024/COMP9024_my/LargeAssignment/libs -o tests/DoWhile.scc.exe
+> tests/DoWhile.scc.exe
+5c5
+< tests/EnvVars.scc.exe
+---
+> tests/DoWhile.scc.exe
+12c12
+< MAKEFLAGS= -- SCC_SRC_FILE=tests/EnvVars.scc
+---
+> MAKEFLAGS= -- SCC_SRC_FILE=tests/DoWhile.scc
+25c25
+< SCC_SRC_FILE=tests/EnvVars.scc
+---
+> SCC_SRC_FILE=tests/DoWhile.scc

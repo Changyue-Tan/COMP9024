@@ -301,7 +301,7 @@ static AstStmtNodePtr DoWhileStatement(void) {
     // Q19. ___________________
     Expect(TK_SEMICOLON);
     // Q20. ___________________
-    doWhileStmt = CreateLabelNode();
+    doWhileStmt->kids[1] = CreateLabelNode();
 
     return doWhileStmt;
 }

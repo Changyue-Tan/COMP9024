@@ -62,6 +62,95 @@ printStrs:
                                         # i = 0;
         movq $0, %rax
         movq %rax, -56(%rbp)
+                                                                        
+
+                                        # start of do {} while (s);
+Label_0:
+                                                                        
+
+                                                                        # ----------------------------
+                                                                        #   AccessName        Temp Var
+                                                                        # ----------------------------
+                                                                        #    -72(%rbp)        t0
+                                                                        # ----------------------------
+                                                                        
+
+                                        # t0 = i * 8
+        movq -56(%rbp), %rax
+        imulq $8, %rax
+        movq %rax, -72(%rbp)
+                                                                        # Pass an argument: strs
+        movq -8(%rbp), %rdi
+                                                                        # Pass an argument: t0
+        movq -72(%rbp), %rsi
+                                                                        # No floating-point numbers when calling a variadic function
+        movq $0, %rax
+                                        # t1 = SccRead64(strs,t0)
+        call SccRead64
+                                                                        # Copy the return value from SccRead64() to a temporary variable t1
+                                                                        
+
+                                                                        # ----------------------------
+                                                                        #   AccessName        Temp Var
+                                                                        # ----------------------------
+                                                                        #    -80(%rbp)        t1
+                                                                        # ----------------------------
+                                                                        
+
+        movq %rax, -80(%rbp)
+                                        # s = t1;
+        movq -80(%rbp), %rax
+        movq %rax, -64(%rbp)
+                                                                        
+
+                                        # start of if(s) {}
+                                        # if(!s) goto Label_1
+        cmpq $0, -64(%rbp)
+        je Label_1
+                                                                        # Pass an argument: s
+        movq -64(%rbp), %rdi
+                                                                        # No floating-point numbers when calling a variadic function
+        movq $0, %rax
+                                        # t2 = puts(s)
+        call puts
+                                                                        # Copy the return value from puts() to a temporary variable t2
+                                                                        
+
+                                                                        # ----------------------------
+                                                                        #   AccessName        Temp Var
+                                                                        # ----------------------------
+                                                                        #    -88(%rbp)        t2
+                                                                        # ----------------------------
+                                                                        
+
+        movq %rax, -88(%rbp)
+                                        # end of if(s) {}
+Label_1:
+                                                                        
+
+                                                                        # ----------------------------
+                                                                        #   AccessName        Temp Var
+                                                                        # ----------------------------
+                                                                        #    -96(%rbp)        t3
+                                                                        # ----------------------------
+                                                                        
+
+                                        # t3 = i + 1
+        movq -56(%rbp), %rax
+        addq $1, %rax
+        movq %rax, -96(%rbp)
+                                        # i = t3;
+        movq -96(%rbp), %rax
+        movq %rax, -56(%rbp)
+                                                                        
+
+                                        # if(s) goto Label_0
+        cmpq $0, -64(%rbp)
+        jne Label_0
+                                                                        
+
+                                        # end of do {} while(s)
+Label_2:
                                                                         # Function Epilogue
         movq %rbp, %rsp
         popq %rbp

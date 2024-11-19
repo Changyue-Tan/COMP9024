@@ -15,83 +15,83 @@ Maze [shape=none, margin=0, label=<
 </tr> 
 <tr> 
 <td width="30" height="30">&#x2192;</td> 
-<td width="30" height="30">&#x2192;</td> 
-<td width="30" height="30">&#x2192;</td> 
-<td width="30" height="30">&#x2192;</td> 
-<td width="30" height="30">&#x2192;</td> 
+<td width="30" height="30">&#x2193;</td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+</tr> 
+<tr> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30">&#x2193;</td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+</tr> 
+<tr> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30">&#x2193;</td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+</tr> 
+<tr> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30">&#x2193;</td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+</tr> 
+<tr> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30">&#x2193;</td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30" bgcolor="white"></td> 
 <td width="30" height="30">&#x2192;</td> 
 <td width="30" height="30">&#x2192;</td> 
 <td width="30" height="30">&#x2193;</td> 
 <td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
 </tr> 
 <tr> 
 <td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30">&#x2193;</td> 
+<td width="30" height="30" bgcolor="white"></td> 
 <td width="30" height="30" bgcolor="white"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30">&#x2192;</td> 
+<td width="30" height="30">&#x2191;</td> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30">&#x2192;</td> 
+<td width="30" height="30">&#x2191;</td> 
+</tr> 
+<tr> 
+<td width="30" height="30" bgcolor="green"></td> 
+<td width="30" height="30">&#x2193;</td> 
 <td width="30" height="30" bgcolor="green"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
 <td width="30" height="30">&#x2191;</td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-</tr> 
-<tr> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-</tr> 
-<tr> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-</tr> 
-<tr> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-</tr> 
-<tr> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-</tr> 
-<tr> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
 <td width="30" height="30" bgcolor="white"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
@@ -99,11 +99,11 @@ Maze [shape=none, margin=0, label=<
 </tr> 
 <tr> 
 <td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30">&#x2192;</td> 
+<td width="30" height="30">&#x2192;</td> 
+<td width="30" height="30">&#x2192;</td> 
+<td width="30" height="30">&#x2193;</td> 
+<td width="30" height="30">&#x2191;</td> 
 <td width="30" height="30" bgcolor="green"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
@@ -114,8 +114,8 @@ Maze [shape=none, margin=0, label=<
 <td width="30" height="30" bgcolor="green"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
-<td width="30" height="30" bgcolor="white"></td> 
+<td width="30" height="30">&#x2192;</td> 
+<td width="30" height="30">&#x2191;</td> 
 <td width="30" height="30" bgcolor="green"></td> 
 <td width="30" height="30" bgcolor="white"></td> 
 <td width="30" height="30" bgcolor="green"></td> 
